@@ -1,0 +1,12 @@
+---- SM2_PointMul Matches (11 in 5 files) ----
+new_sm2_process.c (E:\share\scm_V0.9.0.1_0515\CMApi\CMApi\p11\src\process) line 212 : 函 数 名:	SM2_PointMul
+new_sm2_process.c (E:\share\scm_V0.9.0.1_0515\CMApi\CMApi\p11\src\process) line 225 : int SM2_PointMul(BYTE *pbPriKey, BYTE *pbPubKey, BYTE *pbMul)
+new_sm2_process.h (E:\share\scm_V0.9.0.1_0515\CMApi\CMApi\p11\src\process) line 123 : 函 数 名:	SM2_PointMul
+new_sm2_process.h (E:\share\scm_V0.9.0.1_0515\CMApi\CMApi\p11\src\process) line 136 : int SM2_PointMul(BYTE *pbPriKey, BYTE *pbPubKey, BYTE *pbMul);
+sm2_process.c (E:\share\scm_V0.9.0.1_0515\CMApi\CMApi\p11\src) line 501 : 函 数 名:	SM2_PointMul
+sm2_process.c (E:\share\scm_V0.9.0.1_0515\CMApi\CMApi\p11\src) line 514 : int SM2_PointMul(BYTE *pbPriKey, BYTE *pbPubKey, BYTE *pbMul)
+sm2_process.h (E:\share\scm_V0.9.0.1_0515\CMApi\CMApi\p11\src) line 123 : 函 数 名:	SM2_PointMul
+sm2_process.h (E:\share\scm_V0.9.0.1_0515\CMApi\CMApi\p11\src) line 136 : int SM2_PointMul(BYTE *pbPriKey, BYTE *pbPubKey, BYTE *pbMul);
+smvc_derive_key_mul_1 in smvc.c (E:\share\scm_V0.9.0.1_0515\CMApi\CMApi\p11\src) : 	SM2_PointMul(pubdata, eccdata, sm2pointeddata);
+smvc_derive_key_mul_2_new in smvc.c (E:\share\scm_V0.9.0.1_0515\CMApi\CMApi\p11\src) : 	ret = SM2_PointMul(prkey.Ka, eccdata, sm2pointeddata);
+smvc_derive_key_mul_2_new in smvc.c (E:\share\scm_V0.9.0.1_0515\CMApi\CMApi\p11\src) : 		LOG_E(LOG_FILE, P11_LOG, "smvc_derive_key_mul_2_new:SM2_PointMul failed, ret:%d\n", ret);

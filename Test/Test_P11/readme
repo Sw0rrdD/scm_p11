@@ -1,0 +1,13 @@
+
+1.test_CMApi为p11外部接口的测试代码。
+2.编译说明:
+	a.将源码编译生成的android_CMS和ubuntu_CMS目录拷贝到当前路径。
+	b.执行android_build.sh和ubuntu_build.sh分别编译android和ubuntu版本的测试代码。
+	c.执行编译脚本后，会在当前路径生成android_bin和ubuntu_bin目录。这两个目录下有32位和64位测试程序。(FIXME:目前android平台只支持32位，ubuntu平台只支持64位)
+3.使用说明
+run_android.sh为android平台测试执行脚本，run_android.sh只会将测试程序和依赖库文件adb push到手机上，要执行测试程序，需要adb shell连接手机后，
+到测试程序和依赖库文件所在路径，export export LD_LIBRARY_PATH=./;再执行./test_CMApi。
+
+run_ubuntu.sh为ubuntu平台测试执行脚本，run_ubuntu.sh会直接执行测试程序。
+
+

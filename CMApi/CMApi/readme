@@ -1,0 +1,5 @@
+CMApi编译说明：
+
+1.在android平台，是将CMApi所有目录编译为同一个动态库libCMApi.so
+2.在ubuntu平台，将p11 p15 sm编译为同一个动态库libCMApi.so，wsm_pcs编译为独立的libwsm_pcs.a。原因是ubuntu平台编译动态库去链接白盒算法静态库时，白盒静态库的
+符号表没有链到动态库中，目前还未分析出原因，因此将wsm_pcs编译为独立的libwsm_pcs.a。
